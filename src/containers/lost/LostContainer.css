@@ -1,0 +1,18 @@
+.lost-ctr > .header-pnl{
+    padding: 0 3rem;
+    text-align: left;
+
+}
+
+.lost-ctr > .header-pnl > .branding{
+    border-bottom: solid 1px var(--border-light);
+	padding: 0.5rem;
+}
+
+.lost-ctr > .body-section{
+	margin-top: 2.5rem;
+}
+
+.lost-ctr > .body-section > .sad-image{
+	width: 15rem;
+}
