@@ -1,23 +1,20 @@
-.link-ctr{
-	padding: 1rem 1.5rem;
+a.stklink{
+	padding: 0.75rem 1.25rem;
 	border: 0.0625rem solid var(--primary-color);
 	border-radius: 0.25rem;
-}
-
-.link-ctr > a{
 	text-decoration: none;
+	margin-top: 1rem;
 	color: var(--primary-color);
 }
 
-.link-ctr:active{
-	color: var(--white);
+a.stklink:active{
 	background-color: var(--primary-color);
 }
 
-.link-ctr:hover{
+a.stklink:hover{
 	background-color: var(--primary-contrast-color);
 }
 
-.link-ctr:hover > a, .link-ctr:active > a{
+a.stklink:hover , a.stklink:active {
 	color: var(--white);
 }

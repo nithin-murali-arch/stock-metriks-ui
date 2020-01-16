@@ -3,20 +3,20 @@ import PropTypes from 'prop-types';
 
 import {Link} from 'react-router-dom';
 
-import './StkLink.css';
+import styles from './StkLink.module.css';
 
 function StkLink(props){
 	return (
-		<div className="link-ctr dIb cp">
-			<Link {...props}>
+		<Link className={[styles.stklink, 'dIb', 'cp'].join(' ')} onClick={props.clickhandler} {...props}>
+			<div>
 				{props.children}
-			</Link>
-		</div>
+			</div>
+		</Link>
 	);
 }
 
-StkLink.PropTypes = {
-	children: PropTypes.node
+StkLink.propTypes = {
+	clickhandler: PropTypes.func
 };
 
 export default StkLink;

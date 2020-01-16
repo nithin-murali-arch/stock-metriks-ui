@@ -1,0 +1,19 @@
+.branding{
+    border-bottom: solid 0.0625rem var(--border-light);
+	padding: 0.5rem;
+	margin: 1rem;
+	text-align: left;
+}
+
+.branding > a{
+	color: var(--default-font-color);
+	text-decoration: none;
+}
+
+.branding > a:hover{
+	color: var(--secondary-contrast-color);
+}
+
+.branding > a:active{
+	color: var(--secondary-color);
+}

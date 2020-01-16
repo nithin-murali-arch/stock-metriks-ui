@@ -1,8 +1,10 @@
+/* eslint-disable no-debugger */
 import React, {Component} from 'react';
 
-import StkLink from '../../components/essentials/StkLink/StkLink';
+import StkButton from '../../components/essentials/StkButton/StkButton';
+import Brand from '../../components/brand/Brand';
 
-import classes from './LostContainer.module.css';
+import styles from './LostContainer.module.css';
 import img from '../../assets/images/sad-face.jpg';
 
 export default class LostContainer extends Component{
@@ -11,16 +13,16 @@ export default class LostContainer extends Component{
 	}
 	render(){
 		return (
-			<article className={classes.lost_ctr}>
-				<header className={classes.header_ctr}>
-					<h1 className="branding">Stock Metriks</h1>
+			<article className={styles.lost_ctr}>
+				<header className={styles.header_ctr}>
+					<Brand></Brand>
 				</header>
-				<section className={classes.body_section}>
-					<img className={classes.sad_image} alt="Sad" src={img}></img>
+				<section className={styles.body_section}>
+					<img className={styles.sad_image} alt="Sad" src={img}></img>
 					<h1 className="heading-text">404 - Page not found</h1>
-					<StkLink onClick={() => this.goBack}>
+					<StkButton clickhandler={() => this.goBack()}>
 						<span className="font-bld txt-bdy1">Go Back</span>
-					</StkLink>
+					</StkButton>
 				</section>
 			</article>
 		);

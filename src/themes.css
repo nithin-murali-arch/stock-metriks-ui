@@ -1,7 +1,10 @@
 :root{
-	--border-light: #B4B8AB;
-	--default-font-color: #1A191E;
-	--primary-color: #351431;
-	--primary-contrast-color: #87337D;
+	--border-light: #B8B8D1;
+	--default-font-color: #161925;
+	--light-font-color: #36393B;
+	--primary-color: #2D3047;
+	--primary-contrast-color: #40476D;
+	--secondary-color: #2364AA;
+	--secondary-contrast-color: #3DA5D9;
 	--white: #FFFFFF;
 }
