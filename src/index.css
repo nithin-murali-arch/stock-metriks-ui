@@ -1,3 +1,8 @@
+*{
+	outline: none;
+	box-sizing: border-box;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -16,4 +21,44 @@ code {
 
 .dIb{
 	display: inline-block;
+}
+
+.flex--row, .flex--row-ac, .flex--row-acall{
+	display: flex;
+}
+
+.flex--row-ac{
+	align-items: center;
+}
+
+.flex--row-acall{
+	align-items: center;
+	justify-content: center;
+}
+
+.flex--column, .flex--column-ac, .flex--column-acall{
+	display: flex;
+	flex-direction: column;
+}
+
+.flex--column-ac{
+	align-items: center;
+}
+
+.flex--column-acall{
+	align-items: center;
+	justify-content: center;
+}
+
+.flex--one{
+	flex: 1;
+	overflow: auto;
+}
+
+.mlA{
+	margin-left: auto;
+}
+
+ul{
+	margin: 0;
 }

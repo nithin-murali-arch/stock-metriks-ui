@@ -1,20 +1,59 @@
 a.stklink{
 	padding: 0.75rem 1.25rem;
-	border: 0.0625rem solid var(--primary-color);
-	border-radius: 0.25rem;
 	text-decoration: none;
-	margin-top: 1rem;
+	margin-bottom: 0.05rem;
 	color: var(--primary-color);
+	margin-left: 0.5rem;
 }
 
-a.stklink:active{
+a.stklink.button{
+	border: 0.0625rem solid var(--primary-color);
+}
+
+a.stklink.cta{
+	background: var(--primary-color);
+	color: var(--white);
+	border-radius: 0.25rem;
+	padding: 0.5rem 1rem;
+}
+
+a.stklink.cta:hover{
+	background: var(--primary-contrast-color);
+	color: var(--white);
+}
+
+a.stklink.button:active{
 	background-color: var(--primary-color);
 }
 
-a.stklink:hover{
+a.stklink.button:hover{
 	background-color: var(--primary-contrast-color);
 }
 
-a.stklink:hover , a.stklink:active {
+a.stklink.button:hover , a.stklink.button:active {
 	color: var(--white);
+}
+
+a.stklink.text{
+	color: var(--default-font-color);
+}
+
+a.stklink.text:hover{
+	color: var(--secondary-color-contrast);
+}
+
+a.stklink.top_nav{
+	border-bottom: solid 0.125rem transparent;
+}
+
+a.stklink.top_nav.selected{
+	border-bottom: solid 0.125rem var(--secondary-contrast-color);
+}
+
+a.stklink.top_nav:hover{
+	border-bottom: solid 0.125rem var(--secondary-contrast-color);
+}
+
+a.stklink.text:active{
+	color: var(--secondary-color);
 }

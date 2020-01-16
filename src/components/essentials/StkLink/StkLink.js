@@ -6,8 +6,9 @@ import {Link} from 'react-router-dom';
 import styles from './StkLink.module.css';
 
 function StkLink(props){
+	let mode = props.mode ? props.mode : 'text';
 	return (
-		<Link className={[styles.stklink, 'dIb', 'cp'].join(' ')} onClick={props.clickhandler} {...props}>
+		<Link className={[styles.stklink, props.className, ...(mode.split(' ').map((item)=> styles[item])), 'dIb', 'cp'].join(' ')} to={props.path}>
 			<div>
 				{props.children}
 			</div>
@@ -16,7 +17,11 @@ function StkLink(props){
 }
 
 StkLink.propTypes = {
-	clickhandler: PropTypes.func
+	mode: PropTypes.string,
+	path: PropTypes.string,
+	className: PropTypes.string,
+	clickhandler: PropTypes.func,
+	parent: PropTypes.object
 };
 
 export default StkLink;

@@ -1,9 +1,3 @@
-.lost_ctr > .header_pnl{
-    padding: 0 3rem;
-    text-align: left;
-
-}
-
 .lost_ctr > .header_pnl > .branding{
     border-bottom: solid 1px var(--border-light);
 	padding: 0.5rem;
@@ -15,4 +9,8 @@
 
 .lost_ctr > .body_section > .sad_image{
 	width: 15rem;
+}
+
+.lost_ctr > .body_section > .heading_txt{
+	margin-bottom: 1rem;
 }

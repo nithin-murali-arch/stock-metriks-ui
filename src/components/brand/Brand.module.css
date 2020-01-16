@@ -1,7 +1,6 @@
 .branding{
-    border-bottom: solid 0.0625rem var(--border-light);
-	padding: 0.5rem;
-	margin: 1rem;
+	padding: 0 0.5rem;
+	margin: 0rem;
 	text-align: left;
 }
 
