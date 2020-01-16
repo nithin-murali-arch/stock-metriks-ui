@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import StkLink from '../../components/essentials/StkLink/StkLink';
 
-import './LostContainer.css';
+import styles from './LostContainer.css';
 import img from '../../assets/images/sad-face.jpg';
 
 export default class LostContainer extends Component{
@@ -11,8 +11,8 @@ export default class LostContainer extends Component{
 	};
 	render(){
 		return (
-			<article className="lost-ctr">
-				<header className="header-pnl">
+			<article className={styles.lost_ctr}>
+				<header className={styles.header_ctr}>
 					<h1 className="branding">Stock Metriks</h1>
 				</header>
 				<section className="body-section">
