@@ -1,18 +1,18 @@
-.lost-ctr > .header-pnl{
+.lost_ctr > .header_pnl{
     padding: 0 3rem;
     text-align: left;
 
 }
 
-.lost-ctr > .header-pnl > .branding{
+.lost_ctr > .header_pnl > .branding{
     border-bottom: solid 1px var(--border-light);
 	padding: 0.5rem;
 }
 
-.lost-ctr > .body-section{
+.lost_ctr > .body_section{
 	margin-top: 2.5rem;
 }
 
-.lost-ctr > .body-section > .sad-image{
+.lost_ctr > .body_section > .sad_image{
 	width: 15rem;
 }
