@@ -6,8 +6,7 @@ import './LostContainer.css';
 import img from '../../assets/images/sad-face.jpg';
 
 export default class LostContainer extends Component{
-	goBack = ()=>{
-		debugger;
+	goBack = () => {
 		window.history.back();
 	};
 	render(){
