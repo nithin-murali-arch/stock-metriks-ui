@@ -15,4 +15,8 @@ function StkLink(props){
 	);
 }
 
+StkLink.PropTypes = {
+	children: PropTypes.node
+};
+
 export default StkLink;

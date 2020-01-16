@@ -1,5 +1,7 @@
 {
     "env": {
+		"node": true,
+        "commonjs": true,
         "browser": true,
         "es6": true
     },
@@ -9,11 +11,15 @@
 	],
     "globals": {
         "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
+		"SharedArrayBuffer": "readonly",
+		"process": true
+	},
+	"parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
+			"jsx": true,
+			"modules": true,
+            "experimentalObjectRestSpread": true
         },
         "ecmaVersion": 2018,
         "sourceType": "module"
@@ -22,6 +28,7 @@
         "react"
     ],
     "rules": {
+		"react/prop-types": [2, { "ignore": ["children"] }],
         "indent": [
             "error",
             "tab"
@@ -38,5 +45,11 @@
             "error",
             "always"
         ]
+	},
+	"settings": {
+        "react": {
+            "pragma": "React",
+            "version": "15.6.1"
+        }
     }
 }
