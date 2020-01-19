@@ -1,12 +1,27 @@
+/* eslint-disable no-debugger */
 import React, {Component} from 'react';
 import StkPopup from '../../components/essentials/StkPopup/StkPopup';
 import { Redirect } from 'react-router-dom';
 
+import styles from './LoginContainer.module.css';
+
 import PropTypes from 'prop-types';
+import StkTextBox from '../../components/essentials/StkTextBox/StkTextBox';
+import StkButton from '../../components/essentials/StkButton/StkButton';
 
 class LoginContainer extends Component{
 	constructor(props){
 		super(props);
+	}
+
+	login(){
+		debugger;
+		//!TODO replace this code with actual API calls
+		this.props.loginHandler(true);
+	}
+
+	goBack(){
+		window.history.back();
 	}
 
 	render(){
@@ -16,21 +31,30 @@ class LoginContainer extends Component{
 			);
 		}
 		else{
+			// let name = <StkTextBox type="text"></StkTextBox>;
+			let email = <StkTextBox type="email"></StkTextBox>;
+			let password = <StkTextBox type="password"></StkTextBox>;
 			return (
 				<StkPopup>
-					<header>
+					<header className={styles.header}>
 						<h1 className="txt-supr">Login</h1>
 					</header>
 					<main>
-						<form>
-							<fieldset>
-								<legend>Register</legend>
-								<label htmlFor="name">Name</label><input id="name" type="text"/>
-								<label htmlFor="email">Email</label><input id="email" type="text"/>
-								<label htmlFor="password">Password</label><input type="password" id="password"/>
-							</fieldset>
+						<form onSubmit={this.login.bind(this)}>
+							<div className={['flex--row-ac', styles.field_ctr].join(' ')}>
+								<label className={styles.form_label} htmlFor="email">Email</label>
+								{email}
+							</div>
+							<div className={['flex--row-ac', styles.field_ctr].join(' ')}>
+								<label className={styles.form_label} htmlFor="password">Password</label>
+								{password}
+							</div>
 						</form>
 					</main>
+					<footer className="mlA">
+						<StkButton clickHandler={this.login.bind(this)} className={styles.login} mode="cta">Login</StkButton>
+						<StkButton clickHandler={this.goBack.bind(this)} className="cancel" mode="secondary">Cancel</StkButton>
+					</footer>
 				</StkPopup>
 			);
 		}
@@ -40,5 +64,6 @@ class LoginContainer extends Component{
 export default LoginContainer;
 
 LoginContainer.propTypes = {
-	loggedIn: PropTypes.bool
+	loggedIn: PropTypes.bool,
+	loginHandler: PropTypes.func
 };

@@ -20,7 +20,7 @@ StkLink.propTypes = {
 	mode: PropTypes.string,
 	path: PropTypes.string,
 	className: PropTypes.string,
-	clickhandler: PropTypes.func,
+	clickHandler: PropTypes.func,
 	parent: PropTypes.object
 };
 

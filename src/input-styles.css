@@ -1,0 +1,19 @@
+.input{
+	width: 15rem;
+	height: 2.5rem;
+	border: solid 0.0625rem var(--border-light);
+	border-radius: 0.25rem;
+	padding: 0 0.5rem;
+}
+
+.input.error{
+	border-color: var(--red);
+}
+
+.input:hover{
+	border: solid 0.0625rem var(--secondary-contrast-color);
+}
+
+.input:focus{
+	border: solid 0.0625rem var(--secondary-color);
+}

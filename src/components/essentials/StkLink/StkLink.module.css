@@ -3,6 +3,10 @@ a.stklink{
 	text-decoration: none;
 	margin-bottom: 0.05rem;
 	color: var(--primary-color);
+	
+}
+
+a.stklink:not(.cta){
 	margin-left: 0.5rem;
 }
 

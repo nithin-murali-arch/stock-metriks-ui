@@ -1,11 +1,11 @@
 /* eslint-disable no-debugger */
 import React, {Component} from 'react';
 
-import styles from './StkPopup.module.css';
+import './StkPopup.css';
 import StkFreeze from '../StkFreeze/StkFreeze';
 
 import stkUtils from '../../../utils/stk-utils';
-import cancel from './cancel.svg';
+import SvgIcon from '../SvgIcon/SvgIcon';
 
 export default class StkPopup extends Component{
 	constructor(props){
@@ -29,8 +29,8 @@ export default class StkPopup extends Component{
 		return (
 			<div tabIndex="0" onKeyDown={this.keypressHandler.bind(this)} className="popup">
 				{freeze}
-				<div className={styles.popup_ctr}>
-					<svg className={[styles.close, 'cp'].join(' ')} src={cancel}/>
+				<div className="popup-ctr">
+					<SvgIcon className="close cp" name="close"/>
 					{this.props.children}
 				</div>
 			</div>

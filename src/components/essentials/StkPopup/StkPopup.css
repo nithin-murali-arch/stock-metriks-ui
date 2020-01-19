@@ -1,0 +1,37 @@
+.popup-ctr{
+	border:solid 0.0625rem var(--border-light);
+	border-radius: 0.25rem;
+	position: absolute;
+	width: 50%;
+	right: 0;
+	top: 0;
+	background: var(--white);
+	z-index:10000;
+	height: 100%;
+	padding: 0.5rem 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.popup-ctr > .close{
+	top: 1.5rem;
+	right: 1.5rem;
+	position: absolute;
+}
+
+.popup-ctr > .close:hover{
+	color: var(--secondary-contrast-color);
+}
+
+.popup-ctr > main{
+	display: flex;
+	flex: 1;
+}
+
+.popup-ctr > header, .popup-ctr > footer{
+	height: 2.5rem;
+}
+
+.popup-ctr > main{
+	padding: 1rem 0;
+}

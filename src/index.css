@@ -62,3 +62,7 @@ code {
 ul{
 	margin: 0;
 }
+
+.dn{
+	display: none;
+}

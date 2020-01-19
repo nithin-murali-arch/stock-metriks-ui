@@ -11,21 +11,27 @@ import StkButton from '../../essentials/StkButton/StkButton';
 const loggedInMenu = [
 	{
 		name: 'Dashboard',
-		path: '/dashboard'
+		path: '/dashboard',
+		style: 'top_nav',
+		type: 'link'
 	},
 	{
 		name: 'Orders',
-		path: '/orders'
+		path: '/orders',
+		style: 'top_nav',
+		type: 'link'
 	},
 	{
 		name: 'Holdings',
 		path: '/holdings',
-		style: 'top_nav'
+		style: 'top_nav',
+		type: 'link'
 	},
 	{
 		name: 'Reports',
 		path: '/reports',
-		style: 'top_nav'
+		style: 'top_nav',
+		type: 'link'
 	}
 ];
 
@@ -78,6 +84,7 @@ class HeadNavBar extends Component{
 		}
 	}
 	getTabNameFromPath(path){
+		debugger;
 		let array = this.props.loggedIn ? loggedInMenu : guestMenu;
 		let obj = array.find((item) => item.path === (path ? path : window.location.pathname));
 		return obj.name;

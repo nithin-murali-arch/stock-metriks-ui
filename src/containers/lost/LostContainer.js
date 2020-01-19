@@ -16,7 +16,7 @@ export default class LostContainer extends Component{
 				<section className={[styles.body_section, 'flex--column-acall'].join(' ')}>
 					<img className={styles.sad_image} alt="Sad" src={img}></img>
 					<h1 className="{styles.heading_txt}">404 - Page not found</h1>
-					<StkButton clickhandler={() => this.goBack()}>
+					<StkButton clickHandler={() => this.goBack()}>
 						<span className="font-bld txt-bdy1">Go Back</span>
 					</StkButton>
 				</section>
